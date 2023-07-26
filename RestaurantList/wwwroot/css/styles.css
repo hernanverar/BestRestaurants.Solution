@@ -1,0 +1,25 @@
+body {
+	background-image: url('../assets/currency_background.jpg');
+	background-color: rgb(28, 26, 26);
+	color: white;
+	font-weight: bolder;
+	font-size: larger;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+div#Footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: aquamarine;
+  background: #333;
+  padding: 10px;
+}
+
+.btn {
+	color: #333;
+	background-color: #eee;
+}

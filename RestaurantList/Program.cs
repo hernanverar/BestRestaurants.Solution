@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RestaurantList.Models;
 
@@ -14,10 +13,10 @@ namespace RestaurantList
 
       builder.Services.AddControllersWithViews();
 
-      builder.Services.AddDbContext<RestaurantListContext>(dbContextOptions => dbContextOptions.UseMySql(builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
-          )
-        )
-      );
+      // builder.Services.AddDbContext<RestaurantListContext>(dbContextOptions => dbContextOptions.UseMySql(builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
+      //     )
+      //   )
+      // );
 
       WebApplication app = builder.Build();
 
